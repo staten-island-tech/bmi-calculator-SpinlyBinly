@@ -1,11 +1,11 @@
-let variable; //variable declaration
-variable = "variable";
-let number = 7;
-let string = "Hello";
-let bigstring = "hello2";
-var variable2 = "var";
-let variable3;
-variable = "nope";
-console.log(variable);
-const constant = "constant";
-constant = "shkashdj";
+const user = prompt("Enter your name");
+const heightcm = prompt("Enter your height in cm");
+const heightM = heightcm / 100;
+const weight = prompt("Enter your weight in kg");
+
+function BMI(userName, userHeight, userWeight) {
+const bmiCalc = userWeight / (userHeight * userHeight);
+    console.log(`The BMI for  ${userName} is ${bmiCalc}`);
+  }
+  
+  BMI(user, heightM, weight); 
