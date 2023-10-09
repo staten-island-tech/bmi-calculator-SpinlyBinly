@@ -6,28 +6,24 @@ const weight = prompt("Enter your weight in kg");
 function BMI(userName, userHeight, userWeight) {
   const bmiCalc = userWeight / (userHeight * userHeight);
   console.log(`The BMI for  ${userName} is ${bmiCalc}`);
+  return bmiCalc;
 }
 
-BMI(user, heightM, weight);
-
-function getBMI(x, y) {
-  return BMI;
-}
+const calculatedBMI = BMI(user, heightM, weight);
 
 
 function healthy(BMI) {
-  if (18.5 < x > 24.9) {
+  if (BMI > 18.5 && BMI <= 24.9) {
     console.log("healthy");
-  } else if (x <= 18.5) {
+  } else if (BMI <= 18.5) {
     console.log("underweight");
-  }
-  } else if (x >= 24.9) {
+  } else if (BMI >= 24.9) {
     console.log("overweight");
   }
-
-
-function init() {
-  //getweight
-  //getheight
-  const BMI = getBMIhealthy(BMI);
 }
+healthy(calculatedBMI);
+
+function getBMI(BMI) {
+  return BMI;
+}
+
