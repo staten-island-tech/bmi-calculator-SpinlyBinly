@@ -14,33 +14,17 @@ function getBMI(x, y) {
   return BMI;
 }
 
-/* //10/4/23
-function test(x) {
-  if (x < 10) { //two == works, === checks (3 more precise) 
-    console.log("less");
-  } else if(x > 15) {
-     {console.log("big ole number");
-    } else {
-      console.log("something else");
-    }
-} */
-function test(x, y) {
-  if (x < 5 && y < 5) {
-    console.log("small");
-  } else if (x > 5 || y > 5) {
-    console.log("at least 1 large number");
-  }
-}
-
-function getBMI(h, w) {
-  return BMI;
-}
 
 function healthy(BMI) {
-  //if/then logic
-  console.log;
-  ("healthy etc.");
-}
+  if (18.5 < x > 24.9) {
+    console.log("healthy");
+  } else if (x <= 18.5) {
+    console.log("underweight");
+  }
+  } else if (x >= 24.9) {
+    console.log("overweight");
+  }
+
 
 function init() {
   //getweight
